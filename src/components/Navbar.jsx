@@ -7,8 +7,8 @@ function Navbar() {
             <nav>
                 <ul>
                     <li onClick={() => navigate("/")}>Home</li>
-                    <li onClick={() => navigate("/about")}>Sobre Nosotros</li>
                     <li onClick={() => navigate("/chat")}>Chat</li>
+                    <li onClick={() => navigate("/about")}>Sobre Nosotros</li>
                 </ul>
             </nav>
         </>
