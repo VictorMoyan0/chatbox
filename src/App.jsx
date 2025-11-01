@@ -2,7 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import {  useEffect, useState } from "react"
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { AlertTriangle, Server, Terminal, Shield } from 'lucide-react';
-import Card from './components/Card.jsx' 
+import Card from './components/Card.jsx'
+import CTA from './components/CTA.jsx'
+import Hero from './components/Hero.jsx'
+import './styles/home.css'
 import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import Chat from './components/Chat.jsx'
