@@ -1,3 +1,8 @@
+import { AlertTriangle, Server, Terminal } from 'lucide-react';
+import Hero from './Hero';
+import Card from './Card';
+import CTA from './CTA';
+
 function Home(){
     const features = [
         { id: 'threats', icon: AlertTriangle, title: 'Amenazas y Ataques', description: 'Conoce los principales tipos de ataques informáticos, malware y técnicas de intrusión que amenazan los sistemas modernos.', color: 'red' },
