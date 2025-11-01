@@ -1,4 +1,4 @@
-function CTA({onclick}){
+function CTA({ onclick }){
     return (
         <div className="cta">
             <h2 className="cta-title">¿Necesitas Ayuda?</h2>

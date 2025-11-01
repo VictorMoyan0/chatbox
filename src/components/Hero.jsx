@@ -1,3 +1,5 @@
+import { Shield } from 'lucide-react';
+
 function Hero(){
     return(
         <div className="hero">
