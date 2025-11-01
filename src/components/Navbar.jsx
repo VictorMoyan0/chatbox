@@ -1,17 +1,39 @@
 import { useNavigate } from 'react-router-dom'
+import { Shield, Home, MessageSquare, Users } from "lucide-react";
 
 function Navbar() {
     const navigate = useNavigate();
+    const navItems = [
+        { label: "Inicio", path: "/", icon: Home },
+        { label: "Chat", path: "/chat", icon: MessageSquare },
+        { label: "Sobre Nosotros", path: "/about", icon: Users },
+    ];
+
     return(
-        <>
-            <nav>
-                <ul>
-                    <li onClick={() => navigate("/")}>Home</li>
-                    <li onClick={() => navigate("/chat")}>Chat</li>
-                    <li onClick={() => navigate("/about")}>Sobre Nosotros</li>
+        <nav className="navbar">
+            <div className="navbar-container">
+                {/* Logo y título */}
+                <div className="navbar-logo" onClick={() => navigate("/")}>
+                <Shield className="navbar-icon" />
+                <span className="navbar-title">OS Security</span>
+                </div>
+
+                {/* Enlaces de navegación */}
+                <ul className="navbar-links">
+                {navItems.map(({ label, path, icon: Icon }) => (
+                    <li key={path} className="navbar-item">
+                    <button
+                        onClick={() => navigate(path)}
+                        className="navbar-button"
+                    >
+                        <Icon className="navbar-link-icon" />
+                        {label}
+                    </button>
+                    </li>
+                ))}
                 </ul>
-            </nav>
-        </>
-    )
+            </div>
+        </nav>
+    );
 }
 export default Navbar;
