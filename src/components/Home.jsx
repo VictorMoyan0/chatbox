@@ -25,7 +25,7 @@ function Home(){
             />
           ))}
         </div>
-        <CTA onClick={() => setCurrentPage('ai')} />
+        <CTA onClick={() => navigate('/chat')} />
       </div>
     </div>
     )
