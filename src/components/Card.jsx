@@ -1,4 +1,4 @@
-function Card(){
+function Card({icon: Icon, title, description, color, onClick}){
     return(
         <div className={`feature-card feature-${color}`} onClick={onClick}>
             <Icon className="feature-icon" />
