@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { Shield, Home, MessageSquare, Users } from "lucide-react";
+import './styles/navbar.css';
 
 function Navbar() {
     const navigate = useNavigate();
