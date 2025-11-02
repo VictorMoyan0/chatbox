@@ -13,10 +13,9 @@
   height: 64px;
   display: flex;
   align-items: center;
-  position: relative; /* Para poder centrar el menú con position absolute */
+  position: relative;
 }
 
-/* Logo alineado a la izquierda */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -27,7 +26,6 @@
   position: absolute;
 }
 
-/* Enlaces centrados */
 .navbar-links {
   display: flex;
   align-items: center;
@@ -37,7 +35,6 @@
   width: 100%;
 }
 
-/* Botones del menú */
 .navbar-button {
   display: flex;
   align-items: center;
