@@ -1,6 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import {  useEffect, useState } from "react"
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import './styles/general.css'
 import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
