@@ -2,6 +2,7 @@ import { AlertTriangle, Server, Terminal } from 'lucide-react';
 import Hero from './Hero';
 import Card from './Card';
 import CTA from './CTA';
+import './styles/home.css';
 
 function Home(){
     const features = [
