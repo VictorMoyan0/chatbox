@@ -4,16 +4,18 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  display: flex;
+  justify-content: center; /* centra horizontalmente el contenedor */
 }
 
 .navbar-container {
+  width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
   height: 64px;
+  padding: 0 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* centra verticalmente los elementos */
+  justify-content: space-between; /* separa logo e ítems */
 }
 
 .navbar-logo {
@@ -24,9 +26,10 @@
 }
 
 .navbar-icon {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   color: #a855f7; /* purple-400 */
+  vertical-align: middle;
 }
 
 .navbar-title {
@@ -37,8 +40,16 @@
 
 .navbar-links {
   display: flex;
-  gap: 10px;
+  align-items: center; /* centra verticalmente los enlaces */
+  justify-content: center;
+  gap: 1.5rem; /* separa los botones */
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: flex;
 }
 
 .navbar-button {
