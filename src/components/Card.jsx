@@ -7,4 +7,5 @@ function Card({icon: Icon, title, description, color, onClick}){
         </div>
     )
 }
+
 export default Card;

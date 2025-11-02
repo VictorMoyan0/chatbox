@@ -7,4 +7,5 @@ function CTA({ onClick }){
         </div>
     );
 }
+
 export default CTA;
