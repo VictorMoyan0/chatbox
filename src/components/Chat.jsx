@@ -55,32 +55,30 @@ function Chat(){
 
     return(
     <div className="chat-container">
-      <h1>💬 Chat con IA (Gemini)</h1>
-
-      <div className="chat-box">
-        {messages.map((msg, i) => (
-          <div
-            key={i}
-            className={msg.role === "user" ? "msg user" : "msg ai"}
-          >
-            <b>{msg.role === "user" ? "Tú:" : "Gemini:"}</b>
-            <p>{msg.text}</p>
-          </div>
-        ))}
-        {loading && <p>⏳ Generando respuesta...</p>}
-      </div>
-
-      <div className="chat-input">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Escribe un mensaje..."
-        />
-        <button onClick={handleSend} disabled={loading}>
-          Enviar
-        </button>
-      </div>
+        <h1>💬 Chat con IA (Gemini)</h1>
+        <div className="chat-box">
+            {messages.map((msg, i) => (
+            <div
+                key={i}
+                className={msg.role === "user" ? "msg user" : "msg ai"}
+            >
+                <b>{msg.role === "user" ? "Tú:" : "Gemini:"}</b>
+                <p>{msg.text}</p>
+            </div>
+            ))}
+            {loading && <p>⏳ Generando respuesta...</p>}
+        </div>
+        <div className="chat-input">
+            <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Escribe un mensaje..."
+            />
+            <button onClick={handleSend} disabled={loading}>
+            Enviar
+            </button>
+        </div>
     </div>        
     )
 }
