@@ -15,7 +15,7 @@ function Navbar() {
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="navbar-logo" onClick={() => navigate("/")}>
-                <Shield className="navbar-icon" />
+                    <Shield className="navbar-icon" />
                 </div>
 
                 {/* Enlaces de navegación */}
