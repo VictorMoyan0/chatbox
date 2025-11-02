@@ -67,7 +67,7 @@ function Chat() {
 
   return (
     <div className="chat-container">
-        <h1> Chat con Gemini 💬</h1>
+        <h1>💬 Asistente de IA </h1>
         <div className="chat-box">
             {messages.map((msg, i) => (
             <div key={i} className={msg.role === "user" ? "msg user" : "msg ai"}>
