@@ -8,16 +8,14 @@ import About from './components/About.jsx'
 
 function App() {
   return (
-    <>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/chat" element={<Chat />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
