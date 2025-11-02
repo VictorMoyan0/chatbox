@@ -1,83 +1,64 @@
 .navbar {
-  background-color: #1e293b; /* slate-800 */
-  border-bottom: 2px solid #9333ea; /* purple-500 */
+  background-color: #1e293b;
+  border-bottom: 2px solid #9333ea;
   position: sticky;
-  top: 0;
   z-index: 50;
-  width: 100%;
   display: flex;
-  justify-content: center; /* centra horizontalmente el contenedor interno */
+  justify-content: center;
 }
 
 .navbar-container {
   width: 100%;
   max-width: 1100px;
   height: 64px;
-  padding: 0 1rem;
   display: flex;
-  align-items: center;         /* centra verticalmente */
-  justify-content: space-between; /* logo izquierda, links derecha */
-  gap: 1rem;
+  align-items: center;
+  position: relative; /* Para poder centrar el menú con position absolute */
 }
 
+/* Logo alineado a la izquierda */
 .navbar-logo {
   display: flex;
-  align-items: center;         /* centra verticalmente */
+  align-items: center;
   gap: 8px;
   cursor: pointer;
-  min-width: 48px;
-}
-
-.navbar-icon {
-  display: block;              /* evita que el SVG se desplace por baseline */
-  width: 30px;
-  height: 30px;
-  color: #a855f7; /* purple-400 */
-}
-
-.navbar-title {
   color: white;
   font-weight: 600;
-  font-size: 1.1rem;
-  line-height: 1;
+  position: absolute;
 }
 
+/* Enlaces centrados */
 .navbar-links {
   display: flex;
-  align-items: center;         /* centra verticalmente los enlaces */
+  align-items: center;
   justify-content: center;
   gap: 1.5rem;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.navbar-item {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
+/* Botones del menú */
 .navbar-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
   border-radius: 6px;
   background: none;
-  color: #c4b5fd; /* purple-200 */
+  color: #c4b5fd;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  font: inherit;
-  line-height: 1;
 }
 
 .navbar-button:hover {
-  background-color: #334155; /* slate-700 */
+  background-color: #334155;
   color: white;
 }
 
+.navbar-icon,
 .navbar-link-icon {
-  display: block;
-  width: 16px;
-  height: 16px;
+  color: #a855f7;
 }
