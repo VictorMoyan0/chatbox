@@ -321,7 +321,7 @@
 .suggestions-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: white !important;
+  color: #ffffff !important;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -333,23 +333,24 @@
 }
 
 .suggestion-button {
-  background-color: #0f172a;
-  color: #e9d5ff !important;
+  background-color: #0f172a !important;
+  color: #ffffff !important;
   padding: 1rem;
   border: 2px solid #475569;
   border-radius: 0.5rem;
   cursor: pointer;
   text-align: left;
   font-size: 0.9rem;
+  font-weight: 500;
   transition: all 0.3s ease;
   line-height: 1.4;
-  font-weight: 500;
+  font-family: inherit;
 }
 
 .suggestion-button:hover:not(:disabled) {
-  background-color: #1e293b;
-  border-color: #8b5cf6;
-  color: white !important;
+  background-color: #1e293b !important;
+  border-color: #8b5cf6 !important;
+  color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
 }
@@ -361,6 +362,7 @@
 .suggestion-button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+  color: #9ca3af !important;
 }
 
 /* Responsive para sugerencias */
