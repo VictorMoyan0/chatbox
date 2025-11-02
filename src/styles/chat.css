@@ -1,73 +1,307 @@
+/* chat.css - Estilos para Chat con Gemini */
+
 .chat-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #5b21b6 100%);
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.chat-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Chat Box Container */
 .chat-box {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 10px;
-  height: 400px;
+  width: 100%;
+  max-width: 896px;
+  height: 500px;
+  background-color: #0f172a;
+  border: 2px solid #8b5cf6;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
   overflow-y: auto;
-  background-color: #ffffff;
-  margin-bottom: 10px;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
 }
 
+/* Scrollbar para chat-box */
+.chat-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 5px;
+}
+
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Mensajes */
 .msg {
-  margin: 8px 0;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  animation: fadeInMessage 0.3s ease-out;
+  max-width: 85%;
 }
 
+@keyframes fadeInMessage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mensaje del Usuario */
 .msg.user {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: white;
+  margin-left: auto;
   text-align: right;
+  border: 2px solid #a855f7;
 }
 
-.msg.ai {
-  text-align: left;
-}
-
-.msg p {
-  display: inline-block;
-  border-radius: 10px;
-  padding: 8px 12px;
-  max-width: 80%;
-  word-wrap: break-word;
+.msg.user b {
+  color: #ede9fe;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .msg.user p {
-  background-color: #d1e7ff;
+  color: white;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Mensaje de Gemini (IA) */
+.msg.ai {
+  background-color: #334155;
+  color: #e9d5ff;
+  margin-right: auto;
+  text-align: left;
+  border: 2px solid #475569;
+}
+
+.msg.ai b {
+  color: #c084fc;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .msg.ai p {
-  background-color: #e8ffe8;
+  color: #e9d5ff;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
+/* Loading Message */
+.chat-box > p {
+  color: #c084fc;
+  text-align: center;
+  font-style: italic;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Chat Input Container */
 .chat-input {
+  width: 100%;
+  max-width: 896px;
   display: flex;
-  gap: 8px;
+  gap: 0.75rem;
+  background-color: rgba(30, 41, 59, 0.7);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 2px solid #8b5cf6;
+  backdrop-filter: blur(10px);
 }
 
 .chat-input input {
   flex: 1;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  background-color: #0f172a;
+  color: white;
+  padding: 0.875rem 1rem;
+  border: 2px solid #8b5cf6;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.chat-input input:focus {
+  border-color: #c084fc;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+.chat-input input::placeholder {
+  color: #9ca3af;
 }
 
 .chat-input button {
-  padding: 8px 14px;
-  border: none;
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
   color: white;
-  border-radius: 8px;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.chat-input button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.chat-input button:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .chat-input button:disabled {
-  background-color: #94a3b8;
+  background: linear-gradient(135deg, #64748b 0%, #475569 100%);
   cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Estado vacío del chat */
+.chat-box:empty::before {
+  content: "💬 ¡Hola! Soy tu asistente de Sistemas Operativos.\A\APuedo ayudarte con:\A• Explicar conceptos de seguridad\A• Comandos de Linux y Bash\A• Tipos de ataques y malware\A• Mejores prácticas de protección";
+  display: block;
+  text-align: center;
+  color: #e9d5ff;
+  padding: 3rem 1rem;
+  white-space: pre-wrap;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-container {
+    padding: 2rem 1rem;
+  }
+
+  .chat-container h1 {
+    font-size: 2rem;
+  }
+
+  .chat-box {
+    height: 400px;
+    padding: 1rem;
+  }
+
+  .msg {
+    max-width: 95%;
+  }
+
+  .chat-input {
+    flex-direction: column;
+    padding: 0.75rem;
+  }
+
+  .chat-input input {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .chat-input button {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .chat-box {
+    height: 350px;
+  }
+
+  .msg {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .msg b {
+    font-size: 0.85rem;
+  }
+}
+
+/* Animación para nuevos mensajes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.msg.ai {
+  animation: slideIn 0.4s ease-out;
+}
+
+.msg.user {
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Mejora visual para código en mensajes */
+.msg p code {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* Efecto de escritura para IA */
+.msg.ai p {
+  animation: typing 0.3s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
