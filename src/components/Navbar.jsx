@@ -16,8 +16,7 @@ function Navbar() {
                 {/* Logo y título */}
                 <div className="navbar-logo" onClick={() => navigate("/")}>
                     <Shield className="navbar-icon" />
-                </div>
-                {/* Enlaces de navegación */}
+                                    {/* Enlaces de navegación */}
                 <ul className="navbar-links">
                 {navItems.map(({ label, path, icon: Icon }) => (
                     <li key={path} className="navbar-item">
@@ -31,6 +30,7 @@ function Navbar() {
                     </li>
                 ))}
                 </ul>
+                </div>
             </div>
         </nav>
     );

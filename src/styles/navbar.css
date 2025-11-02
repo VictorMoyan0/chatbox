@@ -4,8 +4,9 @@
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100%;
   display: flex;
-  justify-content: center; /* centra horizontalmente el contenedor */
+  justify-content: center; /* centra horizontalmente el contenedor interno */
 }
 
 .navbar-container {
@@ -14,35 +15,38 @@
   height: 64px;
   padding: 0 1rem;
   display: flex;
-  align-items: center; /* centra verticalmente los elementos */
-  justify-content: space-between; /* separa logo e ítems */
+  align-items: center;         /* centra verticalmente */
+  justify-content: space-between; /* logo izquierda, links derecha */
+  gap: 1rem;
 }
 
 .navbar-logo {
   display: flex;
-  align-items: center;
+  align-items: center;         /* centra verticalmente */
   gap: 8px;
   cursor: pointer;
+  min-width: 48px;
 }
 
 .navbar-icon {
+  display: block;              /* evita que el SVG se desplace por baseline */
   width: 30px;
   height: 30px;
   color: #a855f7; /* purple-400 */
-  vertical-align: middle;
 }
 
 .navbar-title {
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
+  line-height: 1;
 }
 
 .navbar-links {
   display: flex;
-  align-items: center; /* centra verticalmente los enlaces */
+  align-items: center;         /* centra verticalmente los enlaces */
   justify-content: center;
-  gap: 1.5rem; /* separa los botones */
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -50,10 +54,12 @@
 
 .navbar-item {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .navbar-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
@@ -63,6 +69,8 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
+  font: inherit;
+  line-height: 1;
 }
 
 .navbar-button:hover {
@@ -71,6 +79,7 @@
 }
 
 .navbar-link-icon {
+  display: block;
   width: 16px;
   height: 16px;
 }
