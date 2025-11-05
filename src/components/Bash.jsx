@@ -106,4 +106,5 @@ function Bash(){
         </div>
     )
 }
+
 export default Bash;
