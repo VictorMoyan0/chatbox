@@ -3,7 +3,6 @@ import { AlertTriangle, Bug } from 'lucide-react';
 import '../styles/threats.css';
 
 function Threats(){
-  const navigate = useNavigate();
     const malwareTypes = [
         {
           title: 'Virus',
