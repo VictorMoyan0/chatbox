@@ -4,6 +4,7 @@ import Navbar from './components/Navbar.jsx'
 import Chat from './components/Chat.jsx'
 import About from './components/About.jsx'
 import Threats from "./components/Threats.jsx"
+import Linux from "./components/Linux.jsx"
 import './styles/general.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/chat" element={<Chat />} />
         <Route path="/about" element={<About />} />
         <Route path="/threats" element={<Threats />} />
+        <Route path="/linux" element={<Linux />} />
       </Routes>
     </BrowserRouter>
   )
