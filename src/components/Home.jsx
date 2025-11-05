@@ -22,6 +22,7 @@ function Home(){
               title={f.title}
               description={f.description}
               color={f.color}
+              path={f.path}
             />
           ))}
         </div>
