@@ -3,7 +3,7 @@ import { Terminal } from 'lucide-react';
 import '../styles/bash.css';
 
 function Bash(){
-      const scripts = [
+    const scripts = [
     {
         title: 'Verificar Actualizaciones del Sistema',
         code: `#!/bin/bash
