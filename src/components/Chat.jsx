@@ -101,7 +101,7 @@ function Chat() {
       
       <div className="chat-box" ref={chatBoxRef}>
         {messages.length === 0 ? (
-          <div className="empty-state">
+          <div className="empty-state msg ai">
             <p>
               💬 ¡Hola! Soy tu asistente de Sistemas Operativos.
               <br /><br />

@@ -200,7 +200,7 @@
 
 /* Estado vacío del chat */
 .chat-box:empty::before {
-  content: "💬 ¡Hola! Soy tu asistente de Sistemas Operativos.\A\APuedo ayudarte con:\A• Explicar conceptos de seguridad\A• Comandos de Linux y Bash\A• Tipos de ataques y malware\A• Mejores prácticas de protección";
+  content: "";
   display: block;
   text-align: center;
   color: #e9d5ff;
