@@ -28,8 +28,8 @@ function About() {
             <h2 className="card-title">Sobre Este Proyecto</h2>
           </div>
           <p className="card-text">
-            Este portal educativo fue desarrollado como parte del Trabajo Práctico Final de la materia{' '}
-            <span className="highlight highlight-purple">Aplicaciones de 6to año</span>, 
+            Este portal educativo fue desarrollado como parte del Trabajo Práctico Final de la materias{' '}
+            <span className="highlight highlight-purple">Aplicaciones, Sistemas Operativos y Programación de 6to año</span>, 
             con el objetivo de crear una plataforma interactiva que integre conceptos fundamentales de Sistemas 
             Operativos con tecnologías web modernas.
           </p>
@@ -84,7 +84,7 @@ function About() {
         {/* Footer note */}
         <div className="about-footer">
           <p className="footer-text">
-            ✨ Desarrollado con pasión por la tecnología y la educación ✨
+            Desarrollado por: Moyano Víctor, Koyik Thiago, Rende Manuel
           </p>
         </div>
       </div>
