@@ -22,7 +22,6 @@ function Home(){
               title={f.title}
               description={f.description}
               color={f.color}
-              onClick={() => console.log(f.id)}
             />
           ))}
         </div>
