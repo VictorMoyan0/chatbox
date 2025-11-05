@@ -35,6 +35,13 @@ function Threats(){
         description: 'Inyecta código SQL malicioso en campos de entrada para manipular bases de datos.',
         },
     ];
+    const recommendations = [
+        'Mantén tu sistema operativo y software actualizado',
+        'Usa antivirus y firewall activos',
+        'No descargues archivos de fuentes desconocidas',
+        'Realiza copias de seguridad regularmente',
+        'Utiliza contraseñas fuertes y autenticación de dos factores',
+    ];
     return(
         <>
 
