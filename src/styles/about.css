@@ -1,0 +1,346 @@
+/* about.css - Estilos para la página About */
+
+/* Container principal */
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #312e81 100%);
+  padding: 4rem 1rem;
+}
+
+.about-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #c084fc;
+}
+
+.title-divider {
+  width: 8rem;
+  height: 4px;
+  background: linear-gradient(to right, #a855f7, #6366f1);
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+/* Cards generales */
+.card {
+  background-color: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.card-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #e9d5ff;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Project Card */
+.project-card {
+  border: 2px solid #a855f7;
+}
+
+.project-card:hover {
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.3);
+}
+
+.project-card .card-icon {
+  color: #c084fc;
+}
+
+.project-card .card-title {
+  color: #c084fc;
+}
+
+/* Team Card */
+.team-card {
+  border: 2px solid #6366f1;
+}
+
+.team-card:hover {
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+}
+
+.team-card .card-icon {
+  color: #818cf8;
+}
+
+.team-card .card-title {
+  color: #818cf8;
+}
+
+.team-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.team-section {
+  background-color: rgba(15, 23, 42, 0.8);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.developers-section {
+  border-left: 4px solid #a855f7;
+}
+
+.developers-section:hover {
+  border-left-color: #c084fc;
+  transform: translateX(0.5rem);
+}
+
+.subject-section {
+  border-left: 4px solid #6366f1;
+}
+
+.subject-section:hover {
+  border-left-color: #818cf8;
+  transform: translateX(0.5rem);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.section-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #c084fc;
+}
+
+.section-text {
+  color: #e9d5ff;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.year-text {
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+/* Highlights */
+.highlight {
+  color: white;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.highlight-purple {
+  background-color: #9333ea;
+}
+
+.highlight-indigo {
+  background-color: #4f46e5;
+}
+
+/* Technologies Card */
+.tech-card {
+  background: linear-gradient(135deg, #9333ea 0%, #4f46e5 50%, #9333ea 100%);
+  border: 2px solid #c084fc;
+}
+
+.tech-card:hover {
+  box-shadow: 0 15px 40px rgba(192, 132, 252, 0.4);
+}
+
+.tech-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(0.5rem);
+}
+
+.tech-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: white;
+  border-radius: 9999px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.tech-text {
+  color: white;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+/* Footer */
+.about-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-text {
+  color: #e9d5ff;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    flex-direction: column;
+  }
+
+  .title-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.75rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .tech-title {
+    font-size: 1.75rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .tech-item {
+    padding: 0.75rem;
+  }
+
+  .tech-text {
+    font-size: 1rem;
+  }
+}
