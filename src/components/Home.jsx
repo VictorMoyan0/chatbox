@@ -25,7 +25,7 @@ function Home(){
             />
           ))}
         </div>
-        <CTA onClick={() => navigate('/chat')} />
+        <CTA />
       </div>
     </div>
     )
