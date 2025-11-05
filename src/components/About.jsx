@@ -62,7 +62,7 @@ function About() {
               <p className="section-text">
                 Aplicaciones - 6to Año
                 <br />
-                <span className="year-text">Trabajo Práctico Final - 2024</span>
+                <span className="year-text">Trabajo Práctico Final - 2025</span>
               </p>
             </div>
           </div>
