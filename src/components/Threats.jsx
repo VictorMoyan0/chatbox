@@ -1,8 +1,10 @@
 import React from 'react';
 import { AlertTriangle, Bug } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 import '../styles/threats.css';
 
 function Threats(){
+  const navigate = useNavigate();
     const malwareTypes = [
         {
           title: 'Virus',
