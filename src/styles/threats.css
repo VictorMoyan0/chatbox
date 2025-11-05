@@ -8,7 +8,6 @@
 
 .threats-content {
   max-width: 1152px;
-  margin: 0 auto;
 }
 
 /* Título principal */
@@ -133,7 +132,6 @@
 
 .recommendations-list {
   list-style: none;
-  padding: 0;
   color: white;
 }
 
