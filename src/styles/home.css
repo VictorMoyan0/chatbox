@@ -59,8 +59,8 @@
   transform: scale(1.05);
 }
 
-.feature-red { border-color: #f87171; }
-.feature-green { border-color: #34d399; }
+.feature-red { border: 2px solid rgba(255, 77, 109, 0.6); }
+.feature-green { border: 2px solid rgba(74, 222, 128, 0.6); }
 .feature-blue { border-color: #60a5fa; }
 
 .feature-icon {
