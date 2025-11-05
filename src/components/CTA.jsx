@@ -1,5 +1,3 @@
-import { useNavigate } from 'react-router-dom'
-
 function CTA(){
     return (
         <div className="cta">
