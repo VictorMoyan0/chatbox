@@ -4,6 +4,7 @@ import Home from './components/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import Chat from './components/Chat.jsx'
 import About from './components/About.jsx'
+import Threats from "./components/Threats.jsx"
 
 function App() {
   return (
