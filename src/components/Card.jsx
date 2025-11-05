@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+
 function Card({icon: Icon, title, description, color, path}){
     const navigate = useNavigate();
     return(
