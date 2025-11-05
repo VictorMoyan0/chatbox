@@ -1,179 +1,202 @@
-.bashpage-container {
+.bash-container {
   min-height: 100vh;
   background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   padding: 4rem 1rem;
 }
 
-.bashpage-content {
+.bash-content {
   max-width: 1152px;
   margin: 0 auto;
 }
 
-.bashpage-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 2rem;
+/* Encabezado */
+.bash-header {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.bashpage-icon {
+.bash-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.bash-icon {
   width: 3rem;
   height: 3rem;
   color: #60a5fa;
 }
 
-/* Sections */
-.bashpage-section {
+/* Secciones principales */
+.bash-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bash-section {
   background-color: rgba(30, 41, 59, 0.7);
   padding: 2rem;
   border-radius: 0.75rem;
   border: 2px solid;
-  margin-bottom: 2rem;
 }
 
-.bashpage-intro {
+.intro-section {
   border-color: #3b82f6;
 }
 
-.bashpage-scripts {
+.scripts-section {
   border-color: #06b6d4;
 }
 
-.bashpage-commands {
+.commands-section {
   border-color: #a855f7;
 }
 
-.bashpage-section-title {
+/* Títulos de sección */
+.bash-section-title {
   font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.bashpage-section-title.blue {
+.bash-section-title.blue {
   color: #60a5fa;
 }
 
-.bashpage-section-title.cyan {
+.bash-section-title.cyan {
   color: #22d3ee;
 }
 
-.bashpage-section-title.purple {
+.bash-section-title.purple {
   color: #c084fc;
 }
 
-.bashpage-section-text {
+/* Texto */
+.bash-section-text {
   color: #e9d5ff;
   margin-bottom: 1rem;
 }
 
-/* Features */
-.bashpage-feature-box {
+/* Cuadro de características */
+.features-box {
   background-color: #0f172a;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.bashpage-feature-title {
+.features-title {
   font-size: 1.25rem;
   font-weight: bold;
   color: white;
   margin-bottom: 0.75rem;
 }
 
-.bashpage-feature-list {
+.features-list {
   color: #e9d5ff;
   list-style: none;
   padding: 0;
 }
 
-.bashpage-feature-list li {
+.features-list li {
   margin-bottom: 0.5rem;
 }
 
 /* Scripts */
-.bashpage-scripts-list {
+.scripts-list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.bashpage-script-card {
+.script-card {
   background-color: #0f172a;
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
 
-.bashpage-script-title {
+.script-title {
   font-size: 1.25rem;
   font-weight: bold;
   color: white;
   margin-bottom: 0.75rem;
 }
 
-.bashpage-script-code {
-  background-color: #000;
+.script-code {
+  background-color: #000000;
   padding: 1rem;
   border-radius: 0.375rem;
   color: #4ade80;
   font-size: 0.875rem;
   overflow-x: auto;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   white-space: pre;
   line-height: 1.6;
 }
 
-/* Scrollbar */
-.bashpage-script-code::-webkit-scrollbar {
-  height: 8px;
-}
-.bashpage-script-code::-webkit-scrollbar-thumb {
-  background: #4ade80;
-  border-radius: 4px;
-}
-.bashpage-script-code::-webkit-scrollbar-thumb:hover {
-  background: #22c55e;
-}
-
-/* Commands Grid */
-.bashpage-commands-grid {
+/* Grid de comandos */
+.commands-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
-.bashpage-command-card {
+.command-card {
   background-color: #0f172a;
   padding: 1rem;
   border-radius: 0.5rem;
 }
 
-.bashpage-command-name {
+.command-name {
   color: #4ade80;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 1rem;
 }
 
-.bashpage-command-description {
+.command-description {
   color: #e9d5ff;
   font-size: 0.875rem;
   margin-top: 0.5rem;
 }
 
+/* Scrollbar personalizada */
+.script-code::-webkit-scrollbar {
+  height: 8px;
+}
+
+.script-code::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.script-code::-webkit-scrollbar-thumb {
+  background: #4ade80;
+  border-radius: 4px;
+}
+
+.script-code::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .bashpage-title {
-    font-size: 2rem;
+  .bash-header {
     flex-direction: column;
     text-align: center;
   }
-  .bashpage-script-code {
+
+  .bash-title {
+    font-size: 2rem;
+  }
+
+  .script-code {
     font-size: 0.75rem;
   }
-  .bashpage-commands-grid {
+
+  .commands-grid {
     grid-template-columns: 1fr;
   }
 }
