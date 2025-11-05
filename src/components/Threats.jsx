@@ -5,20 +5,19 @@ import '../styles/threats.css';
 function Threats(){
     const malwareTypes = [
         {
-        title: 'Virus',
-        description: 'Se replica insertándose en otros programas. Requiere acción del usuario para propagarse.',
+          title: 'Virus',
+          description: 'Se replica insertándose en otros programas. Requiere acción del usuario para propagarse.',
         },
         {
-        title: 'Gusanos',
-        description: 'Se propagan automáticamente por la red sin intervención del usuario.',
+          title: 'Gusanos',
+          description: 'Se propagan automáticamente por la red sin intervención del usuario.',
         },
         {
-        title: 'Troyanos',
-        description: 'Se disfrazan como software legítimo pero ejecutan acciones maliciosas.',
+          title: 'Troyanos',
+          description: 'Se disfrazan como software legítimo pero ejecutan acciones maliciosas.',
         },
-        {
-        title: 'Ransomware',
-        description: 'Cifra archivos del sistema y exige pago para restaurar el acceso.',
+        { title: 'Ransomware',
+          description: 'Cifra archivos del sistema y exige pago para restaurar el acceso.',
         },
     ];
     const attackTypes = [
