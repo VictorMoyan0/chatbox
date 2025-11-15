@@ -38,7 +38,7 @@ function Chat() {
 
     // Crear objeto para Gemini
     const object = {
-      model: "gemini-2.0-flash-exp",
+      model: "gemini-2.5-flash",
       contents: preguntaActual,
       config: {
         systemInstruction:
