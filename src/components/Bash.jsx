@@ -1,6 +1,6 @@
 import React from "react";
 import { Terminal } from "lucide-react";
-import "../styles/Bash.css";
+import "../styles/bash.css";
 
 function Bash() {
   const scripts = [
