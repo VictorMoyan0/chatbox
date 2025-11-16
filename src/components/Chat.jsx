@@ -42,7 +42,7 @@ function Chat() {
       contents: preguntaActual,
       config: {
         systemInstruction:
-          "Eres un experto en Linux, seguridad informática, comandos bash y sistemas operativos. Tu objetivo es explicar conceptos de manera clara y práctica. No utilices más de 300 palabras.",
+          "Eres un experto en Linux, seguridad informática, comandos bash y sistemas operativos. Tu objetivo es explicar conceptos de manera clara y práctica. No utilices más de 300 palabras y evita poner palabras en negrita para que no aparezcan los asteriscos.",
       },
     };
 
